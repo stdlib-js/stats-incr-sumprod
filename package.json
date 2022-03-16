@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/stats-incr-sumprod",
-  "version": "0.0.6",
+  "version": "0.0.0",
   "description": "Compute a sum of products incrementally.",
   "license": "Apache-2.0",
   "author": {
