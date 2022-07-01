@@ -41,32 +41,30 @@ The sum of products is defined as
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-incr-sumprod
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-incrsumprod = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-sumprod@umd/bundle.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-sumprod@umd/bundle.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.incrsumprod;
-})();
-</script>
+var incrsumprod = require( '@stdlib/stats-incr-sumprod' );
 ```
 
 #### incrsumprod()
@@ -118,14 +116,9 @@ sum = accumulator();
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-sumprod@umd/bundle.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var incrsumprod = require( '@stdlib/stats-incr-sumprod' );
 
 var accumulator;
 var v1;
@@ -142,11 +135,6 @@ for ( i = 0; i < 100; i++ ) {
     accumulator( v1, v2 );
 }
 console.log( accumulator() );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -234,16 +222,17 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [deno-url]: https://github.com/stdlib-js/stats-incr-sumprod/tree/deno
 [umd-url]: https://github.com/stdlib-js/stats-incr-sumprod/tree/umd
 [esm-url]: https://github.com/stdlib-js/stats-incr-sumprod/tree/esm
+[branches-url]: https://github.com/stdlib-js/stats-incr-sumprod/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/stats-incr-sumprod/main/LICENSE
 
 <!-- <related-links> -->
 
-[@stdlib/stats/incr/msumprod]: https://github.com/stdlib-js/stats-incr-msumprod/tree/umd
+[@stdlib/stats/incr/msumprod]: https://github.com/stdlib-js/stats-incr-msumprod
 
-[@stdlib/stats/incr/prod]: https://github.com/stdlib-js/stats-incr-prod/tree/umd
+[@stdlib/stats/incr/prod]: https://github.com/stdlib-js/stats-incr-prod
 
-[@stdlib/stats/incr/sum]: https://github.com/stdlib-js/stats-incr-sum/tree/umd
+[@stdlib/stats/incr/sum]: https://github.com/stdlib-js/stats-incr-sum
 
 <!-- </related-links> -->
 
