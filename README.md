@@ -41,14 +41,30 @@ The sum of products is defined as
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-incr-sumprod
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import incrsumprod from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-sumprod@deno/mod.js';
+var incrsumprod = require( '@stdlib/stats-incr-sumprod' );
 ```
 
 #### incrsumprod()
@@ -101,8 +117,8 @@ sum = accumulator();
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import incrsumprod from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-sumprod@deno/mod.js';
+var randu = require( '@stdlib/random-base-randu' );
+var incrsumprod = require( '@stdlib/stats-incr-sumprod' );
 
 var accumulator;
 var v1;
@@ -133,9 +149,9 @@ console.log( accumulator() );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/stats/incr/msumprod`][@stdlib/stats/incr/msumprod]</span><span class="delimiter">: </span><span class="description">compute a moving sum of products incrementally.</span>
--   <span class="package-name">[`@stdlib/stats/incr/prod`][@stdlib/stats/incr/prod]</span><span class="delimiter">: </span><span class="description">compute a product incrementally.</span>
--   <span class="package-name">[`@stdlib/stats/incr/sum`][@stdlib/stats/incr/sum]</span><span class="delimiter">: </span><span class="description">compute a sum incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats-incr/msumprod`][@stdlib/stats/incr/msumprod]</span><span class="delimiter">: </span><span class="description">compute a moving sum of products incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats-incr/prod`][@stdlib/stats/incr/prod]</span><span class="delimiter">: </span><span class="description">compute a product incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats-incr/sum`][@stdlib/stats/incr/sum]</span><span class="delimiter">: </span><span class="description">compute a sum incrementally.</span>
 
 </section>
 
@@ -150,7 +166,7 @@ console.log( accumulator() );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -212,11 +228,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/incr/msumprod]: https://github.com/stdlib-js/stats-incr-msumprod/tree/deno
+[@stdlib/stats/incr/msumprod]: https://github.com/stdlib-js/stats-incr-msumprod
 
-[@stdlib/stats/incr/prod]: https://github.com/stdlib-js/stats-incr-prod/tree/deno
+[@stdlib/stats/incr/prod]: https://github.com/stdlib-js/stats-incr-prod
 
-[@stdlib/stats/incr/sum]: https://github.com/stdlib-js/stats-incr-sum/tree/deno
+[@stdlib/stats/incr/sum]: https://github.com/stdlib-js/stats-incr-sum
 
 <!-- </related-links> -->
 
