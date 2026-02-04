@@ -65,6 +65,11 @@ s = \sum_{i=0}^{n-1} x_i y_i
 To use in Observable,
 
 ```javascript
+incrsumprod = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-sumprod@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/stats-incr-sumprod/tags). For example,
+
+```javascript
 incrsumprod = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-sumprod@v0.2.3-umd/browser.js' )
 ```
 
@@ -77,7 +82,7 @@ var incrsumprod = require( 'path/to/vendor/umd/stats-incr-sumprod/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-sumprod@v0.2.3-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-sumprod@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -144,7 +149,7 @@ sum = accumulator();
 <html lang="en">
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-sumprod@v0.2.3-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-sumprod@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
